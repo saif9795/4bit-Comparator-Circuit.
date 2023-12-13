@@ -1,0 +1,22 @@
+module miniProject(A3,A2,A1,A0,B3,B2,B1,B0,S1,S2,S3);
+	input A3,A2,A1,A0,B3,B2,B1,B0;
+	output reg S1,S2,S3;
+	always@(A3,A2,A1,A0,B3,B2,B1,B0)
+	begin
+	S1=0;
+	S2=0;
+	S3=0;
+	if(A3==B3 & A2==B2 & A1==B1 & A0==B0)S1=1;
+	
+	else if(A3>B3)S2=1;
+	else if(A3==B3 & A2 > B2)S2=1;
+	else if(A3==B3 & A2==B2 & A1>B1)S2=1;
+	else if(A3==B3 & A2==B2 & A1==B1 & A0 > B0 )S2=1;
+	
+	else if(A3<B3)S3=1;
+	else if(A3==B3 & B2>A2)S3=1;
+	else if(A3==B3 & A2==B2 & B1>A1)S3=1;
+	else if(A3==B3 & A2==B2 & B1==A1 & B0>A0)S3=1;
+	end
+endmodule
+	

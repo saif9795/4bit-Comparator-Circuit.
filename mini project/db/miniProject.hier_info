@@ -1,0 +1,30 @@
+|miniProject
+A3 => LessThan4.IN1
+A3 => LessThan0.IN1
+A3 => always0~0.IN0
+A2 => LessThan5.IN1
+A2 => LessThan1.IN1
+A2 => always0~1.IN0
+A1 => LessThan6.IN1
+A1 => LessThan2.IN1
+A1 => always0~3.IN0
+A0 => LessThan7.IN1
+A0 => LessThan3.IN1
+A0 => always0~5.IN0
+B3 => LessThan4.IN2
+B3 => LessThan0.IN2
+B3 => always0~0.IN1
+B2 => LessThan5.IN2
+B2 => LessThan1.IN2
+B2 => always0~1.IN1
+B1 => LessThan6.IN2
+B1 => LessThan2.IN2
+B1 => always0~3.IN1
+B0 => LessThan7.IN2
+B0 => LessThan3.IN2
+B0 => always0~5.IN1
+S1 <= always0~6.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2~3.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
